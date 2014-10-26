@@ -1,0 +1,70 @@
+MEAN_BY_SUBJECT_ACT CODE BOOK
+
+subject - the number 1-30 corresponding to the subject
+activity - one of six labels for the activity
+timeBodyAccelerationmeanX - time domain body acceleration mean along the X axis
+timeBodyAccelerationmeanY - time domain body acceleration mean along the Y axis
+timeBodyAccelerationmeanZ - time domain body acceleration mean along the Z axis
+timeBodyAccelerationstdX - time domain body acceleration standard deviation along the X axis
+timeBodyAccelerationstdY - time domain body acceleration standard deviation along the Y axis
+timeBodyAccelerationstdZ - time domain body acceleration standard deviation along the Z axis
+timeGravityAccelerationmeanX - time domain gravity acceleration mean along the X axis
+timeGravityAccelerationmeanY - time domain gravity acceleration mean along the Y axis
+timeGravityAccelerationmeanZ - time domain gravity acceleration mean along the Z axis 
+timeGravityAccelerationstdX  - time domain gravity acceleration standard deviation along the X axis
+timeGravityAccelerationstdY - time domain gravity acceleration standard deviation along the Y axis
+timeGravityAccelerationstdZ - time domain gravity acceleration standard deviation along the Z axis
+timeBodyAccelerationJerkmeanX - time domain body acceleration jerk mean along the X axis
+timeBodyAccelerationJerkmeanY - time domain body acceleration jerk mean along the Y axis
+timeBodyAccelerationJerkmeanZ - time domain body acceleration jerk mean along the Z axis
+timeBodyAccelerationJerkstdX - time domain body acceleration standard deviation along the X axis
+timeBodyAccelerationJerkstdY - time domain body acceleration standard deviation along the Y axis
+timeBodyAccelerationJerkstdZ - time domain body acceleration standard deviation along the Z axis
+timeBodyGyroscopemeanX - time domain body gyroscope mean along the X axis
+timeBodyGyroscopemeanY - time domain body gyroscope mean along the Y axis
+timeBodyGyroscopemeanZ - time domain body gyroscope mean along the Z axis
+timeBodyGyroscopestdX - time domain body gyroscope standard deviation along the X axis
+timeBodyGyroscopestdY - time domain body gyroscope standard deviation along the Y axis
+timeBodyGyroscopestdZ - time domain body gyroscope standard deviation along the Z axis
+timeBodyGyroscopeJerkmeanX - time domain body gyroscope jerk mean along the X axis
+timeBodyGyroscopeJerkmeanY - time domain body gyroscope jerk mean along the Y axis
+timeBodyGyroscopeJerkmeanZ - time domain body gyroscope jerk mean along the Z axis
+timeBodyGyroscopeJerkstdX - time domain body gyroscope jerk standard deviation along the X axis
+timeBodyGyroscopeJerkstdY - time domain body gyroscope jerk standard deviation along the Y axis
+timeBodyGyroscopeJerkstdZ - time domain body gyroscope jerk standard deviation along the Z axis
+timeBodyAccelerationMagmean - time domain body acceleration magnitude mean
+timeBodyAccelerationMagstd - time domain body acceleration magnitude standard deviation
+timeGravityAccelerationMagmean  - time domain gravity acceleration magnitude mean 
+timeGravityAccelerationMagstd - time domain gravity acceleration magnitude standard deviation
+timeBodyAccelerationJerkMagmean - time domain body acceleration jerk magnitude mean 
+timeBodyAccelerationJerkMagstd - time domain body acceleration jerk magnitude standard deviation
+timeBodyGyroscopeMagmean - time domain body gyroscope magnitude mean
+timeBodyGyroscopeMagstd - time domain body gyroscope magnitude standard deviation
+timeBodyGyroscopeJerkMagmean - time domain body gyroscope jerk magnitude mean
+timeBodyGyroscopeJerkMagstd - time domain body gyroscope jerk magnitude standard deviation
+frequencyBodyAccelerationmeanX - frequency domain body acceleration mean along the X axis
+frequencyBodyAccelerationmeanY - frequency domain body acceleration mean along the Y axis
+frequencyBodyAccelerationmeanZ - frequency domain body acceleration mean along the Z axis
+frequencyBodyAccelerationstdX - frequency domain body acceleration standard deviation along the X axis
+frequencyBodyAccelerationstdY - frequency domain body acceleration standard deviation along the Y axis
+frequencyBodyAccelerationstdZ - frequency domain body acceleration standard deviation along the Z axis
+frequencyBodyAccelerationJerkmeanX - frequency domain body acceleration jerk mean along the X axis
+frequencyBodyAccelerationJerkmeanY - frequency domain body acceleration jerk mean along the Y axis
+frequencyBodyAccelerationJerkmeanZ - frequency domain body acceleration jerk mean along the Z axis
+frequencyBodyAccelerationJerkstdX - frequency domain body acceleration jerk standard deviation along the X axis
+frequencyBodyAccelerationJerkstdY - frequency domain body acceleration jerk standard deviation along the Y axis
+frequencyBodyAccelerationJerkstdZ - frequency domain body acceleration jerk standard deviation along the Z axis
+frequencyBodyGyroscopemeanX - frequency domain body gyroscope mean along the X axis
+frequencyBodyGyroscopemeanY - frequency domain body gyroscope mean along the Y axis
+frequencyBodyGyroscopemeanZ - frequency domain body gyroscope mean along the Z axis
+frequencyBodyGyroscopestdX - frequency domain body gyroscope standard deviation along the X axis
+frequencyBodyGyroscopestdY - frequency domain body gyroscope standard deviation along the Y axis
+frequencyBodyGyroscopestdZ - frequency domain body gyroscope standard deviation along the Z axis
+frequencyBodyAccelerationMagmean - frequency domain body acceleration magnitude mean
+frequencyBodyAccelerationMagstd - frequency domain body acceleration magnitude standard deviation
+frequencyBodyBodyAccelerationJerkMagmean - frequency domain body acceleration jerk magnitude mean
+frequencyBodyBodyAccelerationJerkMagstd - frequency domain body acceleration jerk magnitude standard deviation
+frequencyBodyBodyGyroscopeMagmean - frequency domain body gyroscope magnitude mean
+frequencyBodyBodyGyroscopeMagstd  - frequency domain body gyroscope magnitude standard deviation 
+frequencyBodyBodyGyroscopeJerkMagmean - frequency domain body gyroscope jerk magnitude mean
+frequencyBodyBodyGyroscopeJerkMagstd - frequency domain body gyroscope jerk magnitude standard deviation 
