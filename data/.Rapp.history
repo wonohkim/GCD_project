@@ -1,0 +1,278 @@
+build("first")
+install("first")
+cppsum(v)
+document("first")
+build("first")
+install("first")
+cppsum(v)
+build("first")
+install("first")
+cppsum(v)
+v
+build("first")
+install("first")
+cppsum()
+document("first")
+build("first")
+install("first")
+cppsum(v)
+document("first")
+build("first")
+install("first")
+document("first")
+build("first")
+install("first")
+cppsum(v)
+document("first")
+build("first")
+install("first")
+sumC(v)
+sumC(v,FALSE)
+cppsum(v)
+r = runif(1000)
+library(microbenchmark)
+r = runif(1000)
+microbenchmark(
+x = sum(r),
+y = sumC(r)
+)
+r = runif(10000)
+microbenchmark(#
+	x = sum(r),#
+	y = sumC(r)#
+)
+r = runif(1000000)#
+microbenchmark(#
+	x = sum(r),#
+	y = sumC(r)#
+)
+ls()
+v = c(1,2,3,4,4,5,6,7,1,4,5,3,3,5,2,1)
+which(v=1)
+which(v = 1)
+which(v == 1)
+v == 1
+load_all("cjtUtil")
+v
+v == 1
+whichC(v==1)
+document("cjtUtil")
+load_all("cjtUtil")
+document("cjtUtil")
+build("cjtUtil")
+install("cjtUtil")
+build("cjtUtil")
+install("cjtUtil")
+load_all("cjtUtil")
+build("cjtUtil")
+install("cjtUtil")
+whichC(v==1)
+library(devtools, roxygen2)
+document("cjtUtil")
+build("cjtUtil")
+install("cjtUtil")
+load_all("cjtUtil")
+document("cjtUtil")
+build("cjtUtil")
+install("cjtUtil")
+v
+whichC(v)
+whichC(v==1)
+cpp_any_repeat(v, which)
+document("cjtUtil")
+build("cjtUtil")
+install("cjtUtil")
+any_repeatC(v)
+document("cjtUtil")
+build("cjtUtil")
+install("cjtUtil")
+any_repeatC(v)
+build("cjtUtil")
+install("cjtUtil")
+any_repeatC(v)
+load_all("cjtUtil")
+document("cjtUtil")
+build("cjtUtil")
+install("cjtUtil")
+v
+any_repeat(v)
+any_repeatC(v)
+document("cjtUtil")
+build("cjtUtil")
+install("cjtUtil")
+library(devtools, roxygen2)
+package.skeleton(name="cpputils")
+load_all(cpputils)
+document(cpputils)
+load_all('cpputils')
+document('cpputils')
+build('cpputils')
+install('cpputils')
+load_all('cpputils')
+document('cpputils')
+build('cpputils')
+install('cpputils')
+a = c(1,2,3); b = c(4,5,6)
+out(a,b)
+document('cpputils')
+load_all('cpputils')
+document('cpputils')
+build('cpputils')
+install('cpputils')
+a = c(1,2,3); b = c(4,5,6)
+out(a,b)
+build('cpputils')
+install('cpputils')
+out(a,b)
+a = c(1,2,3); b = c(4,5,6)
+out(a,b)
+load_all('cpputils')
+build('cpputils')
+install('cpputils')
+out(a,b)
+library(cpputils)
+out(a,b)
+load_all('cpputils')
+build('cpputils')
+install('cpputils')
+out(a,b)
+install.packages("RcppArmadillo")
+help(package="RcppArmadillo")
+library(RcppArmadillo)
+?find()
+??find()
+library(devtools, roxygen2)
+package.skeleton(name="cpputils")
+library("data.table")
+setwd("./data")		# cd to data
+fnames = unzip("tempsamsung.zip", list=TRUE)$Name
+subject_test = fread(input=fnames[16], header=FALSE)
+subject_test
+features
+features = fread(input=fnames[2], header=FALSE)
+features
+feature_names = read.csv(input=fnames[2], header=FALSE)[[2]]
+feature_names = read.csv(input=fnames[2])[[2]]
+feature_names = read.csv(input=fnames[2], header=FALSE)
+feature_names = read.csv(file=fnames[2], header=FALSE)[[2]]
+feature_names = read.csv(file=fnames[2], header=FALSE)
+feature_names
+features = read.csv(file=fnames[2])
+features
+features = read.table(file=fnames[2])
+features
+features = read.table(file=fnames[2])[[2]]
+features
+?read.table
+feature_names = read.table(file=fnames[2], stringsAsFactors=FALSE)[[2]]
+feature_names
+feature_names = read.table(file=fnames[2], stringsAsFactors=FALSE)[[2]]#
+	subject_test = read.table(file =fnames[16], header=FALSE, stringsAsFactors=FALSE)#
+	X_test = read.table(file =fnames[17], header=FALSE, stringsAsFactors=FALSE)#
+	y_test = read.table(file =fnames[18], header=FALSE, stringsAsFactors=FALSE)#
+	subject_train = read.table(file =fnames[30], header=FALSE, stringsAsFactors=FALSE)#
+	X_train = read.table(file =fnames[31], header=FALSE, stringsAsFactors=FALSE)#
+	y_train = read.table(file =fnames[32], header=FALSE, stringsAsFactors=FALSE)
+setwd("./data")		# cd to data
+feature_names = read.table(file=fnames[2], stringsAsFactors=FALSE)[[2]]#
+	subject_test = read.table(file =fnames[16], header=FALSE, stringsAsFactors=FALSE)#
+	X_test = read.table(file =fnames[17], header=FALSE, stringsAsFactors=FALSE)#
+	y_test = read.table(file =fnames[18], header=FALSE, stringsAsFactors=FALSE)#
+	subject_train = read.table(file =fnames[30], header=FALSE, stringsAsFactors=FALSE)#
+	X_train = read.table(file =fnames[31], header=FALSE, stringsAsFactors=FALSE)#
+	y_train = read.table(file =fnames[32], header=FALSE, stringsAsFactors=FALSE)
+str(X_test)
+str(X_train)
+?data.frame
+test = data.frame(subject_names, y_test, X_test)
+test = data.frame(subject_test, y_test, X_test)
+str(test)
+?data.frame
+names(test)
+train = data.frame(subject_train, y_train, X_test)
+train = data.frame(subject_train, y_train, X_train)
+str(train)
+colnames(test)
+variable_names = c("subject", "activity", c(feature_names[[2]]))
+variable_names
+feature_names
+variable_names = c("subject", "activity", c(feature_names))
+feature_names
+variable_names
+names(test) = variable_names
+str(test)
+names(train) = variable_names
+intersect(names(test),names(train))
+str(test)
+names(test) == names(train)
+sum(names(test) == names(train))
+activity = merge(test, train, all=TRUE)
+?merge
+activity = merge(test, train, all=TRUE, by= feature_names)
+activity = merge(test, train, all=TRUE, by=feature_names)
+?rbind
+activity = cbind(test, train)
+activity = rbind(test, train)
+str(activity)
+?grep()
+txt <- c("The", "licenses", "for", "most", "software", "are",#
+  "designed", "to", "take", "away", "your", "freedom",#
+  "to", "share", "and", "change", "it.",#
+   "", "By", "contrast,", "the", "GNU", "General", "Public", "License",#
+   "is", "intended", "to", "guarantee", "your", "freedom", "to",#
+   "share", "and", "change", "free", "software", "--",#
+   "to", "make", "sure", "the", "software", "is",#
+   "free", "for", "all", "its", "users")#
+( i <- grep("[gu]", txt) ) # indices#
+stopifnot( txt[i] == grep("[gu]", txt, value = TRUE) )
+(i = grep("(mean)", feature_names))
+(i = grep("(mean)", names(activity)))
+(i = grep("(mean|std)", names(activity)))
+(i = grep("(subject|activity|mean|std)", names(activity)))
+i = grep("(subject|activity|mean|std)", names(activity))
+i
+activity.mean.std = activity[,i]
+str(activity.mean.std)
+i
+(i = grep("(subject|activity|mean\(|std)", names(activity)))
+(i = grep("(subject|activity|mean(|std)", names(activity)))
+(i = grep("(subject|activity|mean\\(|std)", names(activity)))
+i = grep("(subject|activity|mean\\(|std)", names(activity))
+activity.mean.std = activity[,i]
+str(activity.mean.std)
+head(activity.mean.std, 10)
+head(activity.mean.std, 10)
+naems(activity.mean.std, 10)
+namess(activity.mean.std, 10)
+names(activity.mean.std, 10)
+names(activity.mean.std)
+activity.mean.std$activity
+activity.mean.std$subject
+activity.mean.std$activity
+fnames
+activity_labels = read.table(file=fnames[1], stringsAsFactors=FALSE)[[2]]
+activity_labels
+as.factor(activity_labels)
+activity.mean.std
+activity.mean.std$activity
+as.factor(activity.mean.std$activity)
+?as.factor
+factor(activity.mean.std$activity)
+factor(activity.mean.std$activity, levels=activity_labels)
+factor(as.factor(activity.mean.std$activity), levels=activity_labels)
+activity.mean.std$activity
+levels(activity.mean.std$activity)
+levels(activity.mean.std$activity) = activity_labels
+levels(activity.mean.std$activity)
+activity.mean.std$activity
+class(activity.mean.std$activity)
+factor(activity.mean.std$activity)
+levels(factor(activity.mean.std$activity)) = activity_labels
+levels(as.factor(activity.mean.std$activity)) = activity_labels
+levels(factor(activity.mean.std$activity)) = activity_labels
+activity.mean.std$activity = as.factor(activity.mean.std$activity)
+activity.mean.std$activity
+levels(activity.mean.std$activity)
+levels(activity.mean.std$activity) = activity_labels
+levels(activity.mean.std$activity)
+activity.mean.std$activity

@@ -1,0 +1,636 @@
+factorList
+for(i in splitVec) {#
+	factorList = c(factorList, levels(infert[[i]]))#
+}
+factorList
+levels(infert[["case"]])
+for(i in splitVec) {#
+	# factorList = c(factorList, levels(infert[[i]]))#
+	factorList[i] = levels(infert[[i]])#
+}
+l = list)()
+l = list()
+l["case"] = c(1,2,3)
+l[[]"case"]] = c(1,2,3)
+l[["case"]] = c(1,2,3)
+l
+for(i in splitVec) {#
+	# factorList = c(factorList, levels(infert[[i]]))#
+	factorList[[i]] = levels(infert[[i]])#
+}
+factorList
+factorList = list()
+for(i in splitVec) {#
+	# factorList = c(factorList, levels(infert[[i]]))#
+	factorList[[i]] = levels(infert[[i]])#
+}
+factorList
+infert
+split(infert, "case" )
+split(infert, f="case")
+split(infert, infert[["case"]])
+split(infert, f=infert[["case"]])
+split(infert, f=c(infert[["case"]],infert[["education"]]) )
+spliot
+split
+factorList
+split(infert, infert[["case"]])
+l
+l = list()
+l[[1]]
+l[1] = split(infert, infert[["case"]])
+l[[1]] = split(infert, infert[["case"]])
+l
+l[[c(1,'1')]]
+l[[c(1,1)]]
+l[[c(1,2)]]
+factorList
+install.packages(itertools)
+install.packages("itertools")
+library(itertools)
+product(factorList[["case"]],factorList[["age"]])
+product(c(factorList[["case"]],factorList[["age"]]))
+list(product(c(factorList[["case"]],factorList[["age"]])))
+it <- ihasNext(product(a=1:3, b=1:2))
+it
+while (hasNext(it)) {#
+x <- nextElem(it)#
+cat(sprintf(#
+'#
+a = %d, b = %d\n#
+'#
+, x$a, x$b))#
+}
+factorList
+rep.int(factorList[["case"]],3)
+rep.int(factorList[["education"]],)
+rep.int(factorList[["education"]],2)
+rep.int(factorList[["case"]],42)
+rep.int(factorList[["education"]],63)
+rep.int(factorList[["case"]],63)
+rep.int(factorList[["case"]],42)
+rep.int(factorList[["education"]],42)
+rep.int(factorList[["age"]],6)
+data.frame(
+rep.int(factorList[["case"]],63),
+rep.int(factorList[["education"]],42),
+rep.int(factorList[["age"]],6)
+)
+data.frame(#
+'1' = rep.int(factorList[["case"]],63),#
+'2' = rep.int(factorList[["education"]],42),#
+'3' = rep.int(factorList[["age"]],6)#
+)
+z = data.frame(#
+'1' = rep.int(factorList[["case"]],63),#
+'2' = rep.int(factorList[["education"]],42),#
+'3' = rep.int(factorList[["age"]],6)#
+)
+z
+subset(z, X3==21)
+z = data.frame(#
+1 = rep.int(factorList[["case"]],63),#
+2 = rep.int(factorList[["education"]],42),#
+3 = rep.int(factorList[["age"]],6)#
+)
+factorList
+subset(infert, case==0, education="0-5yrs", age=21)
+subset(infert, infert[[case]]==0, infert[[education]]="0-5yrs", infert[[age]]=21)
+subset(infert, infert[[case]]==0, infert[[education]]=="0-5yrs", infert[[age]]==21)
+infert
+subset(infert, infert[[case]]==0, infert[[education]]=="0-5yrs", infert[[age]]==23)
+subset(infert, infert[[case]]==0, infert[[education]]=="0-5yrs", infert[[age]]==40)
+install.packages("plyr")
+# Summarize a dataset by two variables#
+require(plyr)#
+dfx <- data.frame(#
+group = c(rep(#
+'#
+A#
+'#
+, 8), rep(#
+'#
+B#
+'#
+, 15), rep(#
+'#
+C#
+'#
+, 6)),#
+sex = sample(c("M", "F"), size = 29, replace = TRUE),#
+age = runif(n = 29, min = 18, max = 54)#
+)
+dfx
+require(plyr)#
+dfx <- data.frame(#
+group = c(rep('A', 8), rep('B', 15), rep('C', 6)),#
+sex = sample(c("M", "F"), size = 29, replace = TRUE),#
+age = runif(n = 29, min = 18, max = 54)#
+)
+dfx
+ddply(dfx, .(group, sex), summarize,#
+mean = round(mean(age), 2),#
+sd = round(sd(age), 2))
+file.exists("data")
+if(!file.exists("data")) { # create directory if it doesn't exist#
+	dir.create("data")#
+}#
+#
+setwd("./data")
+file.exists("tempsamsung.zip")
+read.in.files <- function() {#
+	feature_names = read.table(file=fnames[2], stringsAsFactors=FALSE)[[2]]#
+	subject_test = read.table(file =fnames[16], header=FALSE, stringsAsFactors=FALSE)#
+	X_test = read.table(file =fnames[17], header=FALSE, stringsAsFactors=FALSE)#
+	y_test = read.table(file =fnames[18], header=FALSE, stringsAsFactors=FALSE)#
+	subject_train = read.table(file =fnames[30], header=FALSE, stringsAsFactors=FALSE)#
+	X_train = read.table(file =fnames[31], header=FALSE, stringsAsFactors=FALSE)#
+	y_train = read.table(file =fnames[32], header=FALSE, stringsAsFactors=FALSE)#
+	activity_labels = read.table(file=fnames[1], stringsAsFactors=FALSE)[[2]]#
+}
+merge.activity <- function() {#
+	# merge the subjects and activities to each table#
+	test = data.frame(subject_test, y_test, X_test)#
+	train = data.frame(subject_train, y_train, X_train)#
+	# rename the variables in each table#
+	variable_names = c("subject", "activity", c(feature_names))#
+	names(test) = variable_names#
+	names(train) = variable_names#
+	# merge the two table on top of each other#
+	activity = rbind(test, train)#
+}
+extract.mean.std <- function() {#
+	i = grep("(subject|activity|mean\\(|std)", names(activity))#
+	activity.mean.std = activity[,i]#
+}
+descriptive.activities <- function() {#
+	activity.mean.std$activity = as.factor(activity.mean.std$activity)#
+	levels(activity.mean.std$activity) = activity_labels#
+}
+subject_to_factor <- function() {#
+	activity.mean.std$subject = as.factor(activity.mean.std$subject)#
+}
+head(activity.mean.std, 10)
+if(!file.exists("tempsamsung.zip")) { # download file if it doesn't exist#
+	fileHandle <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"#
+	download.file(fileHandle, destfile="tempsamsung.zip", method="curl")#
+	dateDownloaded <- date()#
+	fnames = unzip("tempsamsung.zip", list=TRUE)$Name#
+	unzip("tempsamsung.zip", files=fnames)#
+}
+read.in.files()
+if(!file.exists("tempsamsung.zip")) { # download file if it doesn't exist#
+	fileHandle <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"#
+	download.file(fileHandle, destfile="tempsamsung.zip", method="curl")#
+	dateDownloaded <- date()#
+	fnames <<- unzip("tempsamsung.zip", list=TRUE)$Name#
+	unzip("tempsamsung.zip", files=fnames)#
+}
+read.in.files()
+fnames = unzip("tempsamsung.zip", list=TRUE)$Name
+read.in.files()
+ls()
+read.in.files <- function() {#
+	feature_names = read.table(file=fnames[2], stringsAsFactors=FALSE)[[2]]#
+	subject_test = read.table(file =fnames[16], header=FALSE, stringsAsFactors=FALSE)#
+	X_test = read.table(file =fnames[17], header=FALSE, stringsAsFactors=FALSE)#
+	y_test = read.table(file =fnames[18], header=FALSE, stringsAsFactors=FALSE)#
+	subject_train = read.table(file =fnames[30], header=FALSE, stringsAsFactors=FALSE)#
+	X_train = read.table(file =fnames[31], header=FALSE, stringsAsFactors=FALSE)#
+	y_train = read.table(file =fnames[32], header=FALSE, stringsAsFactors=FALSE)#
+	activity_labels <<- read.table(file=fnames[1], stringsAsFactors=FALSE)[[2]]#
+}
+read.in.files()
+ls()
+merge.activity <- function() {#
+	# merge the subjects and activities to each table#
+	test = data.frame(subject_test, y_test, X_test)#
+	train = data.frame(subject_train, y_train, X_train)#
+	# rename the variables in each table#
+	variable_names = c("subject", "activity", c(feature_names))#
+	names(test) = variable_names#
+	names(train) = variable_names#
+	# merge the two table on top of each other#
+	activity <<- rbind(test, train)#
+}
+merge.activity
+merge.activity()
+ls()
+# FUNCTION SECTION#
+# read in all of the individual files by their fnames index#
+read.in.files <- function() {#
+	feature_names <<- read.table(file=fnames[2], stringsAsFactors=FALSE)[[2]]#
+	subject_test <<- read.table(file =fnames[16], header=FALSE, stringsAsFactors=FALSE)#
+	X_test <<- read.table(file =fnames[17], header=FALSE, stringsAsFactors=FALSE)#
+	y_test <<- read.table(file =fnames[18], header=FALSE, stringsAsFactors=FALSE)#
+	subject_train <<- read.table(file =fnames[30], header=FALSE, stringsAsFactors=FALSE)#
+	X_train <<- read.table(file =fnames[31], header=FALSE, stringsAsFactors=FALSE)#
+	y_train <<- read.table(file =fnames[32], header=FALSE, stringsAsFactors=FALSE)#
+	activity_labels <<- read.table(file=fnames[1], stringsAsFactors=FALSE)[[2]]#
+	reset.directory()#
+}#
+#
+# merge the sets for the test and train data and relabel#
+merge.activity <- function() {#
+	# merge the subjects and activities to each table#
+	test = data.frame(subject_test, y_test, X_test)#
+	train = data.frame(subject_train, y_train, X_train)#
+	# rename the variables in each table#
+	variable_names = c("subject", "activity", c(feature_names))#
+	names(test) = variable_names#
+	names(train) = variable_names#
+	# merge the two table on top of each other#
+	activity <<- rbind(test, train)#
+}#
+#
+# extract mean and std for measurements#
+extract.mean.std <- function() {#
+	i = grep("(subject|activity|mean\\(|std)", names(activity))#
+	activity.mean.std <<- activity[,i]#
+}#
+#
+# convert activities to descriptive factors#
+descriptive.activities <- function() {#
+	activity.mean.std$activity = as.factor(activity.mean.std$activity)#
+	levels(activity.mean.std$activity) = activity_labels#
+}#
+#
+# change subject number to factor#
+subject_to_factor <- function() {#
+	activity.mean.std$subject = as.factor(activity.mean.std$subject)#
+}#
+#
+# reset working directory#
+reset.directory <- function() {#
+	setwd("../")#
+}
+setwd("~/R/rdir/coursera/GCD_project")
+if(!file.exists("data")) { # create directory if it doesn't exist#
+	dir.create("data")#
+}
+setwd("./data")		# cd to data
+if(!file.exists("tempsamsung.zip")) { # download file if it doesn't exist#
+	fileHandle <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"#
+	download.file(fileHandle, destfile="tempsamsung.zip", method="curl")#
+	dateDownloaded <- date()#
+	fnames = unzip("tempsamsung.zip", list=TRUE)$Name#
+	unzip("tempsamsung.zip", files=fnames)#
+}
+fnames = unzip("tempsamsung.zip", list=TRUE)$Name
+read.in.files()
+merge.activity()
+ls()
+extract.mean.std()
+ls()
+descriptive.activities()
+activity.mean.std[["activity"]]
+descriptive.activities <- function() {#
+	activity.mean.std$activity = as.factor(activity.mean.std$activity)#
+	levels(activity.mean.std$activity) <<- activity_labels#
+}
+descriptive.activities()
+activity.mean.std[["activity"]]
+descriptive.activities <- function() {#
+	activity.mean.std$activity <<- as.factor(activity.mean.std$activity)#
+	levels(activity.mean.std$activity) <<- activity_labels#
+}
+descriptive.activities()
+activity.mean.std[["activity"]]
+subject_to_factor <- function() {#
+	activity.mean.std$subject <<- as.factor(activity.mean.std$subject)#
+}
+subject_to_factor()
+activity.mean.std$subject
+ls()
+fnames
+feature_names
+names(activity.mean.std)
+?grep()
+gsub("^t","time", names(activity.mean.std))
+gsub("^f","frequency", names(activity.mean.std))
+names(activity.mean.std) <<- gsub("^t","time", names(activity.mean.std))
+names(activity.mean.std) <- gsub("^t","time", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("^f","frequency", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("Acc","Acceleration", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("Gyro","Gyroscope", names(activity.mean.std))
+names(activity.mean.std)
+library(ply)
+library("ply")
+library("plyr")
+str(activity.mean.std)
+require(plyr)#
+dfx <- data.frame(#
+  group = c(rep('A', 8), rep('B', 15), rep('C', 6)),#
+  sex = sample(c("M", "F"), size = 29, replace = TRUE),#
+  age = runif(n = 29, min = 18, max = 54)#
+)
+dfx
+ddply(dfx, .(group, sex), summarize,#
+ mean = round(mean(age), 2),#
+ sd = round(sd(age), 2))
+str(dfx)
+names(activity.mean.std)
+ddply(activity.mean.std, .(subject,activity), summarize)
+ddply(activity.mean.std, .(subject,activity), summarize,#
+	timeBodyAcceleration-mean()-X = round(mean(timeBodyAcceleration-mean()-X), 2)#
+)
+timeBodyAcceleration-mean-X = round(mean(timeBodyAcceleration-mean()-X), 2)
+ddply(activity.mean.std, .(subject,activity), summarize,#
+	timeBodyAcceleration-mean-X = round(mean(timeBodyAcceleration-mean()-X), 2)#
+)
+names(activity.mean.std) <<- gsub("()","", names(activity.mean.std))
+names(activity.mean.std) <<- gsub("\(\)","", names(activity.mean.std))
+names(activity.mean.std) <<- gsub("(\)","", names(activity.mean.std))
+names(activity.mean.std) <<- gsub("()","", names(activity.mean.std))
+names(activity.mean.std) <- gsub("()","", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("\(\)","", names(activity.mean.std))
+names(activity.mean.std) <- gsub("\()","", names(activity.mean.std))
+names(activity.mean.std) <- gsub("()","", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("()","", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("()"," ", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("\(\)","", names(activity.mean.std))
+names(activity.mean.std) <- gsub("\()","", names(activity.mean.std))
+names(activity.mean.std) <- gsub("\\(\\)","", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("\(\)","", names(activity.mean.std))
+names(activity.mean.std) <- gsub("\(\)","", names(ac tivity.mean.std))
+names(activity.mean.std) <- gsub("()","", names(ac tivity.mean.std))
+names(activity.mean.std) <- gsub("()","", names(activity.mean.std))
+names(activity.mean.std)
+read.in.files()
+setwd("./data")		# cd to data
+read.in.files()
+merge.activity()
+extract.mean.std()
+descriptive.activities()
+subject_to_factor()
+renames.variables()
+# rename variable names to be more descriptive#
+renames.variables() <- function() {#
+	names(activity.mean.std) <<- gsub("^t","time", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("^f","frequency", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("Acc","Acceleration", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("Gyro","Gyroscope", names(activity.mean.std))#
+	names(activity.mean.std) <- gsub("()","", names(activity.mean.std))#
+}
+# rename variable names to be more descriptive#
+renames.variables <- function() {#
+	names(activity.mean.std) <<- gsub("^t","time", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("^f","frequency", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("Acc","Acceleration", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("Gyro","Gyroscope", names(activity.mean.std))#
+	names(activity.mean.std) <- gsub("()","", names(activity.mean.std))#
+}
+renames.variables()
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("()","", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std) <- gsub("\(\)","", names(activity.mean.std))
+names(activity.mean.std) <- gsub("\\(\\)","", names(activity.mean.std))
+names(activity.mean.std)
+names(activity.mean.std)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	timeBodyAcceleration-mean-X = round(mean(timeBodyAcceleration-mean-X),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	timeBodyAcceleration-mean-X <- round(mean(timeBodyAcceleration-mean-X),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	timeBodyAccelerationmeanX = round(mean(timeBodyAcceleration-mean-X),2)#
+)
+names(activity.mean.std) <<- gsub("-","", names(activity.mean.std))
+activity.mean.std
+dfx
+dfy = ddply(dfx, .(group, sex), summarize,#
+ mean = round(mean(age), 2),#
+ sd = round(sd(age), 2))
+dfy
+renames.variables <- function() {#
+	names(activity.mean.std) <<- gsub("^t","time", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("^f","frequency", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("Acc","Acceleration", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("Gyro","Gyroscope", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("\\(\\)","", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("-","", names(activity.mean.std))#
+}
+merge.activity()#
+extract.mean.std()#
+descriptive.activities()#
+subject_to_factor()#
+renames.variables()
+names(activity.mean.std)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	1 = round(mean(timeBodyAccelerationmeanX),2)#
+)
+round(mean(timeBodyAccelerationmeanX),2)
+round(mean("timeBodyAccelerationmeanX"),2)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	mean = round(mean(timeBodyAccelerationmeanX),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	mean = round(mean(timeBodyAccelerationmeanX),2)#
+	mean = round(mean(timeBodyAccelerationmeanY),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	mean = round(mean(timeBodyAccelerationmeanX),2),#
+	mean = round(mean(timeBodyAccelerationmeanY),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	mean1 = round(mean(timeBodyAccelerationmeanX),2),#
+	mean2 = round(mean(timeBodyAccelerationmeanY),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	timeBodyAccelerationmeanX = round(mean(timeBodyAccelerationmeanX),2),#
+	mean2 = round(mean(timeBodyAccelerationmeanY),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	activity.mean.std[3] = round(mean(activity.mean.std[3]),2),#
+	mean2 = round(mean(timeBodyAccelerationmeanY),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	activity.mean.std[[3]] = round(mean(activity.mean.std[[3]]),2),#
+	mean2 = round(mean(timeBodyAccelerationmeanY),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	timeBodyAccelerationmeanX = round(mean(timeBodyAccelerationmeanX),2),#
+	timeBodyAccelerationmeanY = round(mean(timeBodyAccelerationmeanY),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	timeBodyAccelerationmeanX = round(mean(timeBodyAccelerationmeanX),2),#
+	timeBodyAccelerationmeanY = round(mean(timeBodyAccelerationmeanY),2),#
+	timeBodyAccelerationmeanZ = round(mean(timeBodyAccelerationmeanZ),2)#
+)
+names(activity.mean.std)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	timeBodyAccelerationmeanX = round(mean(timeBodyAccelerationmeanX),2),#
+	timeBodyAccelerationmeanY = round(mean(timeBodyAccelerationmeanY),2),#
+	timeBodyAccelerationmeanZ = round(mean(timeBodyAccelerationmeanZ),2),#
+	names(activity.mean.std)[6] = round(mean(names(activity.mean.std)[6]),2)#
+)
+ddply(#
+	activity.mean.std,#
+	.(subject, activity),#
+	summarize,#
+	timeBodyAccelerationmeanX = round(mean(timeBodyAccelerationmeanX),2),#
+	timeBodyAccelerationmeanY = round(mean(timeBodyAccelerationmeanY),2),#
+	timeBodyAccelerationmeanZ = round(mean(timeBodyAccelerationmeanZ),2),#
+	names(activity.mean.std)[[6]] = round(mean(names(activity.mean.std)[[6]]),2)#
+)
+??dplyr
+data(mtcars)
+by_cyl <- group_by(mtcars, cyl)
+install.packages("dplyr")
+by_cyl <- group_by(mtcars, cyl)
+library(dplyr)
+by_cyl <- group_by(mtcars, cyl)
+mtcars
+by_cyl
+by_cyl <- group_by(mtcars, cyl)#
+summarise(by_cyl, mean(disp), mean(hp))
+by_vs_am <- group_by(mtcars, vs, am)
+by_vs_am
+summarise(by_vs_am, mean(disp), mean(hp))
+by_subject_act = group_by(activity.mean.std, subject, activity)
+data(iris)
+str(iris)
+by_species <- iris %>% group_by(Species)
+by_species %>% summarise_each(funs(mean))
+library("dplyr")#
+#
+# Project directory#
+# setwd("~/R/rdir/coursera/GCD_project")#
+#
+# FUNCTION SECTION#
+# read in all of the individual files by their fnames index#
+read.in.files <- function() {#
+	feature_names <<- read.table(file=fnames[2], stringsAsFactors=FALSE)[[2]]#
+	subject_test <<- read.table(file =fnames[16], header=FALSE, stringsAsFactors=FALSE)#
+	X_test <<- read.table(file =fnames[17], header=FALSE, stringsAsFactors=FALSE)#
+	y_test <<- read.table(file =fnames[18], header=FALSE, stringsAsFactors=FALSE)#
+	subject_train <<- read.table(file =fnames[30], header=FALSE, stringsAsFactors=FALSE)#
+	X_train <<- read.table(file =fnames[31], header=FALSE, stringsAsFactors=FALSE)#
+	y_train <<- read.table(file =fnames[32], header=FALSE, stringsAsFactors=FALSE)#
+	activity_labels <<- read.table(file=fnames[1], stringsAsFactors=FALSE)[[2]]#
+	reset.directory()#
+}#
+#
+# merge the sets for the test and train data and relabel#
+merge.activity <- function() {#
+	# merge the subjects and activities to each table#
+	test = data.frame(subject_test, y_test, X_test)#
+	train = data.frame(subject_train, y_train, X_train)#
+	# rename the variables in each table#
+	variable_names = c("subject", "activity", c(feature_names))#
+	names(test) = variable_names#
+	names(train) = variable_names#
+	# merge the two table on top of each other#
+	activity <<- rbind(test, train)#
+}#
+#
+# extract mean and std for measurements#
+extract.mean.std <- function() {#
+	i = grep("(subject|activity|mean\\(|std)", names(activity))#
+	activity.mean.std <<- activity[,i]#
+}#
+#
+# convert activities to descriptive factors#
+descriptive.activities <- function() {#
+	activity.mean.std$activity <<- as.factor(activity.mean.std$activity)#
+	levels(activity.mean.std$activity) <<- activity_labels#
+}#
+#
+# change subject number to factor#
+subject_to_factor <- function() {#
+	activity.mean.std$subject <<- as.factor(activity.mean.std$subject)#
+}#
+#
+# reset working directory#
+reset.directory <- function() {#
+	setwd("../")#
+}#
+#
+# rename variable names to be more descriptive#
+renames.variables <- function() {#
+	names(activity.mean.std) <<- gsub("^t","time", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("^f","frequency", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("Acc","Acceleration", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("Gyro","Gyroscope", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("\\(\\)","", names(activity.mean.std))#
+	names(activity.mean.std) <<- gsub("-","", names(activity.mean.std))#
+}#
+#
+# END FUNCTION SECTION
+if(!file.exists("data")) { # create directory if it doesn't exist#
+	dir.create("data")#
+}
+setwd("./data")		# cd to data
+if(!file.exists("tempsamsung.zip")) { # download file if it doesn't exist#
+	fileHandle <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"#
+	download.file(fileHandle, destfile="tempsamsung.zip", method="curl")#
+	dateDownloaded <- date()#
+	fnames = unzip("tempsamsung.zip", list=TRUE)$Name#
+	unzip("tempsamsung.zip", files=fnames)#
+}
+fnames = unzip("tempsamsung.zip", list=TRUE)$Name
+read.in.files()#
+merge.activity()#
+extract.mean.std()#
+descriptive.activities()#
+subject_to_factor()#
+renames.variables()
+by_subject_act = group_by(activity.mean.std, subject, activity)
+by_subject_act
+by_subject_act %>% summarise_each(funs(mean))
+out = by_subject_act %>% summarise_each(funs(mean))
+head(out)
+?write.csv()
+write.csv(out, "./data/mean_by_subject_act.csv")
